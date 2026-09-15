@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func lengthOfLongestSubstring(s string) int {
 
 	runes := []rune(s)
@@ -20,4 +22,10 @@ func lengthOfLongestSubstring(s string) int {
 		}
 	}
 	return maxLength
+}
+
+func main() {
+	fmt.Println(lengthOfLongestSubstring("abcabcbb")) // 3
+	fmt.Println(lengthOfLongestSubstring("bbbbb"))    // 1
+	fmt.Println(lengthOfLongestSubstring("pwwkew"))   // 3
 }

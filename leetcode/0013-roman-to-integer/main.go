@@ -43,5 +43,5 @@ func romanToInt(s string) int {
 }
 
 func main() {
-	fmt.Printf("result: %d\n", romanToInt("MCMXCIV"))
+	fmt.Printf("result: %d\n", romanToInt("MCMXCIV")) // 1994
 }
