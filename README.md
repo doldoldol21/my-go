@@ -20,7 +20,13 @@ go run ./leetcode/0013-roman-to-integer
 ./scripts/tour-next.sh
 ```
 
-`tour/`의 마지막 폴더 다음 페이지를 사파리로 열고, 그 페이지 폴더(`tour/01-basics/03-exported-names/main.go`)를 만든다. 섹션이 끝났으면 다음 섹션 1페이지로 넘어간다.
+`tour/`의 마지막 폴더 다음 페이지를 열고, 그 페이지 폴더(`tour/01-basics/03-exported-names/main.go`)를 만든다. 섹션이 끝났으면 다음 섹션 1페이지로 넘어간다.
+
+VS Code 터미널에서 돌리면 내장 브라우저로, 아니면 사파리로 열린다. 내장 브라우저로 열려면 확장을 한 번 깔아 둔다.
+
+```sh
+cd scripts/vscode-open-url && npx @vscode/vsce package --skip-license -o /tmp/open-url.vsix && code --install-extension /tmp/open-url.vsix
+```
 
 두 번 돌리면 한 페이지를 건너뛴다. 그럴 땐 마지막 폴더를 지운다.
 

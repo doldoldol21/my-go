@@ -54,4 +54,10 @@ url="https://go.dev/tour/$section/$page"
 echo "마지막: ${last:-없음}"
 echo "만든 폴더: $dir"
 echo "다음: $url"
-open -a Safari "$url"
+
+# VS Code 터미널이고 scripts/vscode-open-url 확장이 깔려 있으면 내장 브라우저로, 아니면 사파리로
+if [ "${TERM_PROGRAM:-}" = vscode ] && code --list-extensions 2>/dev/null | grep -qx doldoldol21.open-url; then
+	open "vscode://doldoldol21.open-url?url=$(printf %s "$url" | sed 's/:/%3A/g; s#/#%2F#g')"
+else
+	open -a Safari "$url"
+fi
