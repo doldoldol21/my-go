@@ -14,6 +14,8 @@ Go 다시 공부하면서 쌓아두는 곳.
 go run ./leetcode/0013-roman-to-integer
 ```
 
+VS Code에서는 `Cmd+Shift+B`로 열려 있는 파일의 폴더를 바로 실행한다 (`.vscode/tasks.json`).
+
 ## 투어 이어하기
 
 ```sh
