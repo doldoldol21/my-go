@@ -1,6 +1,6 @@
 #!/bin/bash
-# tour/ 에서 마지막으로 푼 페이지를 찾아 그 다음 Tour of Go 페이지 폴더를 만들고 사파리 새 탭으로 연다.
-# 폴더 이름이 곧 위치다: tour/01-basics/02-imports → go.dev/tour/basics/2
+# tour/ 에서 마지막으로 푼 페이지를 찾아 그 다음 Tour of Go 페이지 폴더를 만들고 브라우저로 연다.
+# 폴더 이름이 곧 위치다: tour/01-basics/02-imports → <투어>/basics/2
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
@@ -50,7 +50,8 @@ if [ ! -e "$dir/main.go" ]; then
 	printf 'package main\n\nfunc main() {\n}\n' >"$dir/main.go"
 fi
 
-url="https://go.dev/tour/$section/$page"
+# 한국어판 (go.dev/tour/welcome/2 번역 목록에 걸린 미러, 페이지 번호는 원본과 같다)
+url="https://ko-go-dev.shuijingwanwq.com/tour/$section/$page"
 echo "마지막: ${last:-없음}"
 echo "만든 폴더: $dir"
 echo "다음: $url"
