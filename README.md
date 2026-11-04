@@ -42,3 +42,10 @@ git commit -m "leetcode: 20 valid parentheses"
 git commit -m "projects: booking-app 입력 검증 추가"
 git commit -m "chore: README 수정"
 ```
+
+`./scripts/commit.sh`를 돌리면 바뀐 폴더를 보고 메시지를 만들어 커밋하고 푸시한다. 폴더 밖 파일이 섞여 있으면 메시지를 직접 넘긴다.
+
+```sh
+./scripts/commit.sh                       # tour: 01-basics exported-names ~ variables-with-initializers
+./scripts/commit.sh "chore: README 수정"
+```
